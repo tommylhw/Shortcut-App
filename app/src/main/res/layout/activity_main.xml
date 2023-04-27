@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlb_top_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/lightBlue"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="#FFFFFF"></androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnb_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightBlue"
+        app:itemIconTint="@drawable/nav_selector"
+        app:itemTextColor="@drawable/nav_selector"
+        app:menu="@menu/nav_menu" />
+
+    
+    <!--Windows-->
+    <ImageButton
+        android:id="@+id/btn_windows"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tlb_top_action_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_outline_windows"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_windows" />
+
+    <TextView
+        android:id="@+id/txv_windows"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_windows"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Windows"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp" />
+
+    <!--Unity-->
+    <ImageButton
+        android:id="@+id/btn_unity"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tlb_top_action_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button_outline_unity"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_unity" />
+
+    <TextView
+        android:id="@+id/txv_unity"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_windows"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Unity 3D"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp" />
+
+    <!--Visual Studio-->
+    <ImageButton
+        android:id="@+id/btn_visual_studio"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/txv_windows"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_outline_visual_studio"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_visual_studio" />
+
+    <!--Visual Studio-->
+    <TextView
+        android:id="@+id/txv_visual_studio"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_visual_studio"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Visual Studio Code"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/btn_android_studio"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/txv_unity"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_outline_android_studio"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_android_studio" />
+
+    <TextView
+        android:id="@+id/txv_android_studio"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_android_studio"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:text="Android Studio"
+        android:textSize="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+
+
+</RelativeLayout>

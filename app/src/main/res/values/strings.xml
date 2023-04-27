@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ShortcutApp</string>
+
+    <array name="software">
+        <item>Windows</item>
+        <item>Unity</item>
+        <item>Visual Studio Code</item>
+        <item>Android Studio</item>
+    </array>
+</resources>

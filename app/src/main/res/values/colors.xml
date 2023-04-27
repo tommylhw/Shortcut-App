@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightBlue">#03A9F4</color>
+
+    <color name="windows_outline">#0078D6</color>
+    <color name="unity_outline">#000000</color>
+    <color name="visual_studio_outline">#865FC5</color>
+    <color name="android_studio_outline">#63B148</color>
+</resources>
